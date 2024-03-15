@@ -4,12 +4,18 @@ Complete the following python code to print all numbers between the two values i
 Name:
 Lab Time:
 """
-
 def inc_5():
-    # Write your code here
-    
+    first_int = int(input())
+    second_int = int(input())
 
+    if second_int < first_int:
+        print("Second integer can't be less than the first.")
+    else:
+        while first_int <= second_int:
+            print(first_int, end=' ')
+            first_int += 5
 
+    print()  # Print newline at the end
 
 if __name__ == '__main__':
     inc_5()
